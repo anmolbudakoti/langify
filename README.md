@@ -155,4 +155,4 @@ Project Link: [https://github.com/anmolbudakoti/langify](https://github.com/anmo
 
 ---
 
-`<p align="center">`Made with ❤️ by Anmol Budakoti`</p>`
+``Made with ❤️ by Anmol Budakoti``
