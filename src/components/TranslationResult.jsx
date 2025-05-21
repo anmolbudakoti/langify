@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Copy, Check, Volume2Icon } from "lucide-react";
 
-const TranslationResult = ({ text, targetLang, className = "" }) => {
+const TranslationResult = ({ text, targetLang }) => {
   const [copied, setCopied] = useState(false);
 
   const speakText = () => {
@@ -27,7 +27,7 @@ const TranslationResult = ({ text, targetLang, className = "" }) => {
   };
 
   return (
-    <div className={`p-4 bg-gray-700/50 rounded-md fade-in ${className}`}>
+    <div className="p-4 bg-gray-700/50 rounded-md fade-in mt-6">
       <h3 className="text-lg font-medium text-gray-200 mb-2">Translation</h3>
       <div className="flex justify-between items-start">
         <p className="text-lg text-gray-200">{text}</p>
@@ -36,7 +36,6 @@ const TranslationResult = ({ text, targetLang, className = "" }) => {
             onClick={copyToClipboard}
             className="p-2 text-gray-400 hover:text-blue-400 hover:bg-gray-700 rounded-full transition-colors"
             title={copied ? "Copied!" : "Copy to clipboard"}
-            aria-label={copied ? "Copied!" : "Copy to clipboard"}
           >
             {copied ? (
               <Check className="w-5 h-5 text-green-500" />
@@ -48,7 +47,6 @@ const TranslationResult = ({ text, targetLang, className = "" }) => {
             onClick={speakText}
             className="p-2 text-gray-400 hover:text-blue-400 hover:bg-gray-700 rounded-full transition-colors"
             title="Speak"
-            aria-label="Speak translation"
           >
             <Volume2Icon className="w-5 h-5" />
           </button>

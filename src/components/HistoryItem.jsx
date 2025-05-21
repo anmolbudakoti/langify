@@ -51,7 +51,6 @@ const HistoryItem = ({ item }) => {
             onClick={() => copyToClipboard(item.translatedText)}
             className="p-2 text-gray-500 hover:text-blue-400 hover:bg-gray-700 rounded-full transition-colors"
             title="Copy translation"
-            aria-label="Copy translation"
           >
             <Copy className="w-4 h-4" />
           </button>
@@ -59,7 +58,6 @@ const HistoryItem = ({ item }) => {
             onClick={() => speakText(item.sourceText, item.sourceLang)}
             className="p-2 text-gray-500 hover:text-blue-400 hover:bg-gray-700 rounded-full transition-colors"
             title="Speak source text"
-            aria-label="Speak source text"
           >
             <FileVolumeIcon className="w-4 h-4" />
           </button>
@@ -67,7 +65,6 @@ const HistoryItem = ({ item }) => {
             onClick={() => speakText(item.translatedText, item.targetLang)}
             className="p-2 text-gray-500 hover:text-blue-400 hover:bg-gray-700 rounded-full transition-colors"
             title="Speak translated text"
-            aria-label="Speak translated text"
           >
             <Volume2Icon className="w-4 h-4" />
           </button>

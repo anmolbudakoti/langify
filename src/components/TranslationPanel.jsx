@@ -69,7 +69,6 @@ const TranslationPanel = ({ addToHistory }) => {
             label="From:"
             value={sourceLang}
             onChange={setSourceLang}
-            className=""
           />
 
           <button
@@ -86,7 +85,6 @@ const TranslationPanel = ({ addToHistory }) => {
             label="To:"
             value={targetLang}
             onChange={setTargetLang}
-            className=""
           />
         </div>
 
@@ -111,11 +109,7 @@ const TranslationPanel = ({ addToHistory }) => {
         )}
 
         {translatedText && (
-          <TranslationResult
-            text={translatedText}
-            targetLang={targetLang}
-            className="mt-6"
-          />
+          <TranslationResult text={translatedText} targetLang={targetLang} />
         )}
       </div>
     </div>

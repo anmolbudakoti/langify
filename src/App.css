@@ -36,7 +36,6 @@ body {
   }
 }
 
-/* Translation Form Styles */
 .translation-form {
   background-color: white;
   border-radius: 8px;
@@ -93,7 +92,6 @@ body {
   cursor: not-allowed;
 }
 
-/* Language Selector Styles */
 .language-selector {
   display: flex;
   align-items: center;
@@ -112,7 +110,6 @@ body {
   background-color: white;
 }
 
-/* Translation Result Styles */
 .translation-result {
   margin-top: 20px;
   background-color: #f9f9f9;
@@ -157,7 +154,6 @@ body {
   padding: 3px;
 }
 
-/* Translation History Styles */
 .translation-history {
   background-color: white;
   border-radius: 8px;
@@ -243,7 +239,6 @@ body {
   gap: 5px;
 }
 
-/* Error Message Styles */
 .error-message {
   background-color: #f8d7da;
   color: #721c24;
@@ -253,33 +248,11 @@ body {
   text-align: center;
 }
 
-/* Custom scrollbar for Webkit browsers */
-::-webkit-scrollbar {
-  width: 8px;
-  height: 8px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb {
-  background: #c1c1c1;
-  border-radius: 10px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #a8a8a8;
-}
-
-/* Custom scrollbar for Firefox */
 * {
   scrollbar-width: thin;
   scrollbar-color: #c1c1c1 #f1f1f1;
 }
 
-/* Animation for fade-in effect */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -295,7 +268,6 @@ body {
   animation: fadeIn 0.3s ease-in-out;
 }
 
-/* Pulse animation for loading state */
 @keyframes pulse {
   0%,
   100% {

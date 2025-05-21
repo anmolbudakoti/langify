@@ -1,8 +1,8 @@
 import { languages } from "../utils/languages";
 
-const LanguageSelector = ({ id, label, value, onChange, className = "" }) => {
+const LanguageSelector = ({ id, label, value, onChange }) => {
   return (
-    <div className={`flex items-center space-x-2 ${className}`}>
+    <div className="flex items-center space-x-2">
       <label htmlFor={id} className="text-gray-300 font-medium">
         {label}
       </label>

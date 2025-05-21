@@ -12,7 +12,7 @@ const HistoryPanel = ({ history, clearHistory }) => {
           <button
             onClick={clearHistory}
             className="flex items-center px-3 py-2 bg-red-500 hover:bg-red-600 text-white rounded-md transition-colors"
-            aria-label="Clear history"
+            title="Clear history"
           >
             <Trash2 className="w-4 h-4 mr-1" />
           </button>
